@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
-const randomNumber = () => Math.floor(Math.random() * 122) + 1;
+type Props = {
+  image: string;
+};
 
-export function RandomFox(): JSX.Element {
-  const image = `https://randomfox.ca/images/${randomNumber()}.jpg`;
-
+export function RandomFox({ image }: Props): JSX.Element {
   return (
     <img
       width="320"
