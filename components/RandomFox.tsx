@@ -1,0 +1,16 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
+const randomNumber = () => Math.floor(Math.random() * 122) + 1;
+
+export function RandomFox(): JSX.Element {
+  const image = `https://randomfox.ca/images/${randomNumber()}.jpg`;
+
+  return (
+    <img
+      width="320"
+      height="auto"
+      src={image}
+      className="mx-auto rounded-md bg-gray-300"
+    />
+  );
+}
