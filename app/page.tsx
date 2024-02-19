@@ -22,7 +22,7 @@ type ImageItem = {
 };
 
 const Home: NextPage = () => {
-  const [images, setImages] = useState<Array<ImageItem>>([]);
+  const [images, setImages] = useState<Array<IFoxImageItem>>([]);
 
   const addNewFox: MouseEventHandler<HTMLButtonElement> = () => {
     const id = generateId();
